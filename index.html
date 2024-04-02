@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Widget Data</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Test Widget Data</h1>
+            <p>Scroll down to see the detailed structure</p>
+        </header>
+        <div class="grid-container1" style="background-color: rgb(3, 76, 136);">
+            <div class="grid-item1">Workplan System</div>
+            <div class="grid-item1">Header Operation</div>
+            <div class="grid-item1">General Operation</div>
+            <div class="grid-item1">Parameters</div>
+            <div class="grid-item1">Equipments</div>
+            <div class="grid-item1">Materials</div>
+        </div>
+        <div class="grid-container2" style="background-color: white;">
+            <div class="grid-item2">
+                WPL 001
+                Estimated Time=0.0
+                Estimated Time Unit:Hours
+            </div>
+            
+            <div class="grid-item2" >
+                HOP 001
+                Estimated Time=0.0
+                Estimated Time Unit:Hours
+            </div>
+            <div class="grid-item2">
+                GOP 001
+                Estimated Time=0.0
+                Estimated Time Unit:Hours
+            </div>
+            <div class="grid-item2">
+                <div id="extra" class="grid-item2" >
+                Minimum 30.0
+                Mn: 0.0
+                Value 35.0
+                Control Max: 0.0
+                Maximum 400
+                Unit: KELVIN
+                </div>
+            </br>
+                <div id="extra" class="grid-item2">
+                Minimum 120.0
+                Control Min: 0.0
+                Value: 125.0
+                Control Max: 0.0
+                Maximum 130.0
+                Unit: NM2
+                </div>
+            </div>
+            <!-- <div class="grid-item2" style="background-color: white;">
+                <div class="grid-item2">
+                
+                </div>
+                <div class="grid-item2">
+                    Hello
+                
+                </div>
+                
+            </div> -->
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                  <span class="close" onclick="closePopup()">&times;</span>
+                  <p id="dynamicdata">Hello! This is a popup.</p>
+                </div>
+            </div>              
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
