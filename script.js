@@ -13,6 +13,9 @@ function openPopup(event) {
   document.getElementById('dynamicdata').innerText = dynamicdat;
   document.getElementById('popup').style.display = 'block';
 }
+function Print() {
+  window.print();
+}
 function closePopup() {
   document.getElementById('popup').style.display = 'none';
 }
