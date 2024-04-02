@@ -21,9 +21,8 @@ body {
 }
 .grid-container1 {
     display: grid;
-    grid-template-rows: 40px;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr ;
-    grid-gap: 10px;
+    grid-template-columns:repeat(6,1fr) ;
+    grid-gap: 20px;
     background-color: rgb(3, 76, 136);
     padding: 10px;
     top:1%;
@@ -31,13 +30,30 @@ body {
 }
 .grid-container2 {
     display: grid;
-    grid-template-rows: 500px;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr ;
-    grid-gap: 10px;
+    grid-template-columns:repeat(6,1fr) ;
+    grid-gap: 20px;
     background-color: rgb(3, 76, 136);
     padding: 10px;
+    position: relative;
     text-align: center;
+
 }
+.arrow-right::after{
+    color: black;
+  content: "\2794";
+  font-size: 16px;
+  position: relative;
+  left: 7.875rem;
+  
+}
+.arrow-left::after {
+    color: black;
+    content: '🡄';
+    font-size: 16px;
+    bottom: 50%;
+    position: relative;
+    right: 7.875rem;
+  }
 .grid-item1 {
     padding: 5px;
     border: 1px solid #ddd;
@@ -75,7 +91,8 @@ body {
     left: 70%;
     height: 100%;
     background-color:gainsboro 
-  }
+}
+
   .popup-content {
     background-color: #fefefe;
     margin: 5% auto;
