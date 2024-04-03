@@ -25,8 +25,9 @@ body {
     grid-gap: 20px;
     background-color: rgb(3, 76, 136);
     padding: 10px;
-    top:1%;
+    top:1px;
     position: sticky;
+    z-index: 1;
 }
 .grid-container2 {
     display: grid;
