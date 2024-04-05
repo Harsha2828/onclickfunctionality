@@ -11,6 +11,10 @@ body {
 }
 .header {
     text-align: center;
+    top:1px;
+    position: sticky;
+    z-index: 1;
+    background-color: white;
 }
 .header h1 {
     font-size: 2em;
@@ -25,9 +29,6 @@ body {
     grid-gap: 20px;
     background-color: rgb(3, 76, 136);
     padding: 10px;
-    top:1px;
-    position: sticky;
-    z-index: 1;
 }
 .grid-container2 {
     display: grid;
@@ -111,4 +112,7 @@ body {
     color: black;
     text-decoration: none;
     cursor: pointer;
+  }
+  .title-page {
+    page-break-after: always;
   }
