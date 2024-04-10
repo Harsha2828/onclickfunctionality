@@ -11,10 +11,6 @@ body {
 }
 .header {
     text-align: center;
-    top:1px;
-    position: sticky;
-    z-index: 1;
-    background-color: white;
 }
 .header h1 {
     font-size: 2em;
@@ -27,14 +23,16 @@ body {
     display: grid;
     grid-template-columns:repeat(6,1fr) ;
     grid-gap: 20px;
-    background-color: rgb(3, 76, 136);
+    top: 0%;
+    position: sticky;
+    background-color: rgb(3, 76, 136) !important;
     padding: 10px;
+    z-index: 1;
 }
 .grid-container2 {
     display: grid;
     grid-template-columns:repeat(6,1fr) ;
     grid-gap: 20px;
-    background-color: rgb(3, 76, 136);
     padding: 10px;
     position: relative;
     text-align: center;
@@ -92,6 +90,7 @@ body {
     top: 40%;
     left: 70%;
     height: 100%;
+    
     background-color:gainsboro 
 }
 
