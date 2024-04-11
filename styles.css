@@ -1,15 +1,10 @@
 * {
+  print-color-adjust: exact !important;
   -webkit-print-color-adjust: exact !important;   /* Chrome, Safari 6 – 15.3, Edge */
-  print-color-adjust: exact !important;           /* Firefox 97+, Safari 15.4+ */
 }
 @page {
   size:A4 landscape;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin: 0;
-  -webkit-print-color-adjust: exact;
+  margin: 0 0 0 0;
 }
 body {
     margin: 0;
