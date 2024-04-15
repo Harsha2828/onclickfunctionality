@@ -1,9 +1,9 @@
 * {
-  print-color-adjust: exact !important;
-  -webkit-print-color-adjust: exact !important;   /* Chrome, Safari 6 – 15.3, Edge */
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact !important;
 }
 @page {
-  size:A4 landscape;
+  size:A4;
   margin: 0 0 0 0;
 }
 body {
@@ -33,7 +33,7 @@ body {
     grid-gap: 20px;
     top: 0%;
     position: sticky;
-    background-color: rgb(3, 76, 136) !important;
+    background-color: rgb(3, 76, 136);
     padding: 10px;
     z-index: 1;
 }
@@ -123,7 +123,7 @@ body {
   .title-page {
     page-break-after: always;
   }
-@media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     .grid-container1,
     .grid-container2 {
       grid-template-columns: repeat(3, 1fr);
