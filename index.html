@@ -1,82 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Test Widget Data</title>
-    <link rel="stylesheet" href="styles.css">
+  <title>Page</title>
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
     <button onclick="Print()">Download/print</button>
-    <div class="container">
-        <header class="header">
-            <h1>Test Widget Data</h1>
-            <p>Scroll down to see the detailed structure</p>
-        </header>
-        <div class="grid-container1" style="background-color: rgb(3, 76, 136);">
-            <div class="grid-item1">Workplan System</div>
-            <div class="grid-item1">Header Operation</div>
-            <div class="grid-item1">General Operation</div>
-            <div class="grid-item1">Parameters</div>
-            <div class="grid-item1">Equipments</div>
-            <div class="grid-item1">Materials</div>
-        </div>
-        <div class="grid-container2" style="background-color: white;">
-            <div class="grid-item2">
-                WPL 001
-                Estimated Time=0.0
-                Estimated Time Unit:Hours
-            </div>
-            <div class="grid-item2 arrow-right" >
-                HOP 001
-                Estimated Time=0.0
-                Estimated Time Unit:Hours
-            </div>
-            <div class="grid-item2">
-                GOP 001
-                Estimated Time=0.0
-                Estimated Time Unit:Hours
-            </div>
-            <div class="grid-item2 arrow-left">
-                <div id="extra" class="grid-item2" >
-                Minimum 30.0
-                Mn: 0.0
-                Value 35.0
-                Control Max: 0.0
-                Maximum 400
-                Unit: KELVIN
-                </div>
-            </br>
-                <div id="extra" class="grid-item2">
-                Minimum 120.0
-                Control Min: 0.0
-                Value: 125.0
-                Control Max: 0.0
-                Maximum 130.0
-                Unit: NM2
-                </div>
-            </div>
-            <div class="grid-item2">
-                GOP 001
-                Estimated Time=0.0
-                Estimated Time Unit:Hours
-            </div>
-            <div class="grid-item2">
-                GOP 001
-                Estimated Time=0.0
-                Estimated Time Unit:Hours
-            </div>
-            <div id="popup" class="popup">
-                <div class="popup-content">
-                  <span class="close" onclick="closePopup()">&times;</span>
-                  <p id="dynamicdata">Hello! This is a popup.</p>
-                </div>
-            </div>              
-        </div>
+    <header class="header">
+        <h1>Test Widget Data</h1>
+        <p>Scroll down to see the detailed structure</p>
+    </header>
+    <div class="container1">
+    <div class="item">Workplan System</div>
+    <div class="item">Header Operation</div>
+    <div></div>
+    <div class="item">General Operation</div>
+    <div></div>
+    <div class="item">Parameters</div>
+    <div class="item">Equipments</div>
+    <div class="item">Materials</div>
     </div>
-    <div class="title-page">
-        title
+  <div class="container">
+    <div class="grid-item2">WPL 001 </br>Estimated Time:0.0 </br>Estimated Time Unit:Hours</div>
+    <div class="grid-item2">HOP 001 </br>Estimated Time:0.0</br> Estimated Time Unit:Hours</div>
+    <b id="arrow">&#11157</b>
+    <div class="grid-item2">GOP 001 </br>Estimated Time:0.0 </br>Estimated Time Unit:Hours</div>
+    <b id="arrow">&#11013</b>
+    <div class="grid-item2">
+        <div id="extra" class="grid-item2" >
+            Minimum 30.0</br>
+            Mn: 0.0</br>
+            Value: 35.0</br>
+            Control Max: 0.0</br>
+            Maximum :400</br>
+            Unit: KELVIN</br>
+            </div>
+        </br>
+            <div id="extra" class="grid-item2">
+            Minimum 120.0</br>
+            Control Min: 0.0</br>
+            Value: 125.0</br>
+            Control Max: 0.0</br>
+            Maximum :130.0</br>
+            Unit: NM2</br>
+            </div>
     </div>
-    <script src="script.js"></script>
+    <div class="grid-item2">Equip 001 </br> Estimated Time=0.0 Estimated Time Unit:Hours</div>
+    <div class="grid-item2">MPL 001 </br>Estimated Time=0.0 Estimated Time Unit:Hours</div>
+    <div id="popup" class="popup">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <p id="dynamicdata"></p>
+      <p id="heading"></p>
+      <table id="data-table1"></table>
+      <table id="data-table"></table>
+    </div>
+  </div> 
+  
+  <script src="script.js"></script>
 </body>
 </html>
